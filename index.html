@@ -1,10 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="styles.css">
+
 <head>
     <meta charset="UTF-8">
     <title>Fed3R</title>
 </head>
 <body>
+
+<br>
+<div style="text-align: center;">
+        <span style="font-size:26px">Accelerating Heterogeneous Federated Learning <br>
+            with Closed-form Classifiers</span><br><br><br>
+</div>
+<table>
+    <tbody>
+    <tr>
+        <td width="160px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <a href="https://scholar.google.com/citations?user=rwto7AgAAAAJ&hl=en">Eros Fanì</a>
+                    <sup>1</sup>
+                </span>
+            </div>
+        </td>
+        <td width="160px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <a href="https://scholar.google.com/citations?user=vBBJ2wkAAAAJ&hl=en">
+                        Raffaello Camoriano
+                    </a>
+                    <sup>1 2</sup>
+                </span>
+            </div>
+        </td>
+        <td width="160px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <a href="https://scholar.google.com/citations?user=mHbdIAwAAAAJ&hl=en">
+                        Barbara Caputo
+                    </a>
+                    <sup>1 3</sup>
+                </span>
+            </div>
+        <td width="160px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <a href="https://marcociccone.github.io/">
+                        Marco Ciccone
+                    </a>
+                    <sup>1</sup>
+                </span>
+            </div>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+<br>
+
+<table>
+    <tbody>
+    <tr>
+        <td width="50px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"></span>
+            </div>
+        </td>
+        <td width="250px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <sup>1</sup>DAUIN, PoliTO, Italy
+                </span>
+            </div>
+        </td>
+        <td width="250px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <sup>2</sup>IIT, Genoa, Italy
+                </span>
+            </div>
+        </td>
+        <td width="250px">
+            <div style="text-align: center;">
+                <span style="font-size:16px">
+                    <sup>3</sup>CINI, Rome, Italy
+                </span>
+            </div>
+        </td>
+        <td width="50px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"></span>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+    <tr>
+        <td width="200px">
+            <div style="text-align: center;">
+                <br>
+                <span style="font-size:20px">
+                    <a href="https://github.com/Erosinho13/Fed3R">GitHub</a>
+                </span>
+            </div>
+        </td>
+
+        <td width="200px">
+            <div style="text-align: center;">
+                <br>
+                <span style="font-size:20px">
+                    <a href="about:blank">arXiv</a>
+                    <br/>
+                </span>
+            </div>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+<br/>
+
+<div class="corr">Corresponding author email: <a href="mailto:eros.fani@polito.it">eros.fani@polito.it</a> </div>
+
+<hr>
+
+<div style="text-align: center;">
+    <h2> Abstract </h2>
+</div>
+
+<header>
+    Federated Learning (FL) methods often struggle in highly statistically heterogeneous settings, resulting in
+    client drift due to biased local solutions. This phenomenon is particularly pronounced in the final
+    classification layer, negatively impacting convergence speed and accuracy. To tackle this issue, we introduce
+    Federated Recursive Ridge Regression (Fed3R). Our method fits a Ridge Regression-based classifier computed in
+    closed form exploiting pre-trained features. Fed3R is immune to statistical heterogeneity and invariant to the
+    sampling order of the clients. Therefore, it proves particularly effective in extreme cross-device scenarios.
+    Furthermore, it is fast and cheap in terms of communication and computation costs, requiring up to two orders of
+    magnitude fewer resources than the competitors. Finally, we propose to leverage the FED3R classifier parameters
+    as an initialization for the softmax classifier and subsequently fine-tune the model using another FL algorithm
+    (Fed3R with Fine-Tuning, Fed3R + FT). Our findings also indicate that maintaining a fixed classifier aids in
+    stabilizing the training and learning more discriminative features in extreme cross-device settings.
+</header>
+
+<br>
+
+<h2>How to cite us</h2>
+<div>
+    <pre>
+        @article{fani2024accelerating,
+            title={Accelerating Heterogeneous Federated Learning with Closed-form Classifiers},
+            author={Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara
+                    and Ciccone, Marco},
+            journal={Proceedings of the International Conference on Machine Learning},
+            year={2024}
+        }
+    </pre>
+</div>
+
+<h1 class="wip">Work in progress!!</h1>
 
 </body>
 </html>
