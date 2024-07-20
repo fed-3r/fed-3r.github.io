@@ -15,6 +15,10 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-weight: bold;
+}
+
 p {
     font-weight: 300;
     line-height: 1.4;
@@ -42,8 +46,6 @@ pre>code {
 pre.prettyprint>code {
     border: none;
 }
-
-
 
 .disclaimerbox {
     background-color: #eee;
@@ -88,7 +90,7 @@ a:hover {
     color: #208799;
 }
 
-td.dl-link {
+header td.dl-link {
     height: 160px;
     text-align: center;
     font-size: 22px;
@@ -137,10 +139,7 @@ td.dl-link {
                 /* The third layer */
             10px 10px 1px 1px rgba(0, 0, 0, 0.35);
     /* The third layer shadow */
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-bottom: 5px;
+    margin: 5px 30px 5px 10px;
 }
 
 .vert-cent {
@@ -159,12 +158,12 @@ hr {
     text-align: center;
 }
 
-table {
+header table {
     align-content: center;
     width: 800px;
 }
 
-td {
+header td {
     align-content: center;
 }
 
@@ -185,4 +184,120 @@ pre {
     text-align: left;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.fed3r-steps {
+    width: 800px;
+}
+
+.fed3r {
+    color: #f1791c;
+    font-weight: bold;
+}
+
+.fed3rrf {
+    color: #ee311f;
+    font-weight: bold;
+}
+
+.fed3rft {
+    color: #c365e4;
+    font-weight: bold;
+}
+
+.inline-image {
+    height: 1em; /* Set the height to match the font size */
+    vertical-align: middle; /* Align the image vertically with the text */
+}
+
+.inline-image-noalign {
+    height: 1em; /* Set the height to match the font size */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+div table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+div th, div td {
+    border-bottom: 1px solid lightgrey;
+    padding: 8px;
+    text-align: left;
+}
+div th {
+    background-color: #003366;
+    color: white;
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
+div tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+div tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.centered-image {
+    width: 100%;
+}
+
+#immunity_sh {
+    width: 80%;
+}
+
+.results {
+    width: 100%;
+}
+
+/* * {box-sizing: border-box;}
+
+.img-magnifier-container {
+    position: relative;
+}
+
+.img-magnifier-glass {
+    position: absolute;
+    border: 2px solid #cfcfcf;
+    border-radius: 50%;
+    cursor: none;
+    width: 300px;
+    height: 300px;
+} */
+
+.back-to-top {
+    display: inline-block;
+    margin-top: -20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    float: right;
+}
+
+.back-to-top:hover {
+    color: #ff8000;
+}
+
+section .news {
+    background-color: #f9f9f9;
+    padding: 10px;
+    display: block;
+    margin-top: -7px;
+    margin-bottom: -30px;
+}
+
+li .date {
+    font-weight: bold;
+    display: inline;
+    color: #1367a7;
 }
